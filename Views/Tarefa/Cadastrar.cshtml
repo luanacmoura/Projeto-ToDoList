@@ -1,0 +1,35 @@
+@{
+    ViewBag.Title="Cadastro de Tarefas";
+    Layout = "MasterPage";
+}
+
+<section class="quadrado">
+    <h1> Cadastro de Tarefas </h1>
+
+    <form action="/Tarefa/Cadastrar" method="POST">
+        <label> Nome da Tarefa:
+            <input type="text" name="nome" required=true>
+        </label>
+
+        <label> Descrição:
+            <input type="text" name="descricao" requires=true>
+        </label>
+
+        <label> Data a ser feita:
+            <input type="date" name="quando" required=true>
+        </label>
+
+        <label> Estado:
+            <input type="radio" name="tipo" required=true value="Para fazer">        
+            Para fazer
+            <input type="radio" name="tipo" required=true value="Fazendo">        
+            Fazendo
+            <input type="radio" name="tipo" required=true value="Concluído">        
+            Concluído
+        </label>
+        <input type="submit" value="Cadastrar">
+        <a href="/Usuario/Login"> Sair </a>
+    </form>
+</section>
+
+@ViewBag.Mensagem

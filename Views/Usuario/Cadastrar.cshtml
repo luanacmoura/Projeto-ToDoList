@@ -1,0 +1,34 @@
+@{
+    ViewBag.Title="Cadastro";
+    Layout = "MasterPage";
+}
+
+<section class="quadrado">
+    <h1> Cadastro de Usuário </h1>
+
+    <form action="/Usuario/Cadastrar" method="POST">
+        <label> Nome:
+            <input type="text" name="nome" placeholder="Insira seu nome..." required=true>
+        </label>
+
+        <label> Email:
+            <input type="email" name="email" placeholder="Insira um email válido..." required=true>
+        </label>
+
+        <label> Senha:
+            <input type="password" name="senha" required=true>
+        </label>
+
+        <label> Tipo:
+            <select name="tipo" required=true>
+                <option name="usuario"> Usuario comum </option>
+                <option name="admin"> Administrador</option>
+            </select>
+        </label>
+
+        <input type="submit" value="Enviar">
+        <p> Já possui uma conta? </p> 
+        <a href="/Usuario/Login"> Entrar </a>
+    </form>
+</section>
+@ViewBag.Mensagem

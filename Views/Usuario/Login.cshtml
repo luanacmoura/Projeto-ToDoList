@@ -1,0 +1,23 @@
+@{
+    ViewBag.Title="Login";
+    Layout = "MasterPage";
+}
+
+<section class="quadrado">
+    <h1> Login </h1>
+
+    <form action="/Usuario/Login" method="POST">
+        <label> Email:
+            <input type="email" name="email" required=true>
+        </label>
+        <label>Senha:
+            <input type="password" name="senha" required=true>
+        </label>
+
+        <input type="submit" value="Continuar">
+        <p> Ainda não possui uma conta? </p> 
+        <a href="/Usuario/Cadastrar"> Cadastre-se! </a>
+    </form>
+</section>
+
+@ViewBag.Mensagem
