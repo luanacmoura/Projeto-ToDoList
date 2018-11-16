@@ -1,18 +1,44 @@
 * {
     margin:0;
     padding:0;
+    font-family: 'Bitter', serif;
+    font-size:16px;
+    color:#313131;
 }
 
 body {
-    background: #ccaaaa;;
+    background-image:url('imagens/pattern.jpg');
+    background-size: 10%;
+    background-repeat: repeat;
     display:flex;
     flex-direction: column;
+    height:auto;
 }
 
 h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', serif;
     text-align: center;
-    color:#ffffff;
+    color:#b35454;
+    font-size:38px;
+}
+
+.slogan {
+    text-align: center;
+    margin-top:5px;
+    margin-bottom:30px;
+}
+
+p,a {
+    text-align:center;
+}
+
+a {
+    text-decoration:none;
+    color:#c24f4f;
+}
+
+a:hover {
+    color:#964545;
 }
 
 form {
@@ -21,18 +47,73 @@ form {
     justify-content: center;
 }
 
-input {
-    width:100%;
-}
-
 .quadrado {
+    margin-top:80px;
+    display:flex;
+    flex-direction:column;
     align-self: center;
-    align-content: center;
     height:100%;
     width:25%;
+    background: #ffffff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow: 0px 0px 10px #3f3f3f;
 }
+
+label {
+    display:flex;
+    flex-direction: row;
+    margin-bottom:10px;
+}
+
+label p {
+    width:20%;
+}
+
+input {
+    width:80%;
+    align-self: flex-end;   
+}
+
+.textinput:active {
+    border:1px solid #b35454;
+}
+
+.logo{
+    align-self: center;
+    width:30%;
+    max-height:100px;
+}
+
+.botao-ir {
+    background-color:#b35454;
+    border:none;
+    width:50%;
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 25px;
+    border-radius:6px;
+    width:40%;
+    color:white;
+    text-shadow: 2px 2px 2px #3f3f3f;
+    align-self: center;
+}
+
+.botao-ir:hover {
+    text-shadow: 2px 2px 2px #3f3f3f;
+    font-size:17px;
+}
+
 
 footer {
     display:flex;
     justify-content: center;
+    align-self: center;
+    position: absolute;
+    bottom:1px;
+}
+
+footer p {
+    color: #3f3f3f;
+    text-shadow: 2px 2px 4px #9c5454;
 }

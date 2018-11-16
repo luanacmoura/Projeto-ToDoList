@@ -11500,30 +11500,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\46863229870\\.nuget\\packages\\": {},
+    "C:\\Users\\Luana\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\46863229870\\Projeto_ToDoList\\Projeto_ToDoList.csproj",
+      "projectUniqueName": "c:\\Users\\Luana\\Desktop\\Projeto-ToDoList\\Projeto_ToDoList.csproj",
       "projectName": "Projeto_ToDoList",
-      "projectPath": "C:\\Users\\46863229870\\Projeto_ToDoList\\Projeto_ToDoList.csproj",
-      "packagesPath": "C:\\Users\\46863229870\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\46863229870\\Projeto_ToDoList\\obj\\",
+      "projectPath": "c:\\Users\\Luana\\Desktop\\Projeto-ToDoList\\Projeto_ToDoList.csproj",
+      "packagesPath": "C:\\Users\\Luana\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Luana\\Desktop\\Projeto-ToDoList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\46863229870\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Luana\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -4,17 +4,21 @@
 }
 
 <section class="quadrado">
-    <h1> Login </h1>
+    <img  src="/css/imagens/icon.png" class="logo"/>
+    <h1> Task Central </h1>
+    <p class="slogan"> Todas as suas tarefas em um só lugar. </p>
 
     <form action="/Usuario/Login" method="POST">
-        <label> Email:
-            <input type="email" name="email" required=true>
+        <label> 
+            <p> Email: </p>
+            <input class ="textinput" type="email" name="email" required=true>
         </label>
-        <label>Senha:
+        <label>
+            <p> Senha: </p>
             <input type="password" name="senha" required=true>
         </label>
 
-        <input type="submit" value="Continuar">
+        <input type="submit" value="Continuar" class="botao-ir">
         <p> Ainda não possui uma conta? </p> 
         <a href="/Usuario/Cadastrar"> Cadastre-se! </a>
     </form>
