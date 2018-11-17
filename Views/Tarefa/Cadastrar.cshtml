@@ -4,22 +4,28 @@
 }
 
 <section class="quadrado-cadastrar">
-    <h1> Cadastro de Tarefas </h1>
-
+    <div class="align-titlecad">
+        <img  src="/css/imagens/icon.png" class="tarefa-title"/>
+        <h1>  Cadastro de Tarefas </h1>
+    </div>
     <form action="/Tarefa/Cadastrar" method="POST">
-        <label> Nome da Tarefa:
-            <input type="text" name="nome" required=true>
+        <label> 
+            <p> Nome da Tarefa: </p>
+            <input class ="textinput" type="text" name="nome" required=true>
         </label>
 
-        <label> Descrição:
-            <input type="text" name="descricao" requires=true>
+        <label> 
+            <p> Descrição: </p>
+            <input class ="textinput" type="text" name="descricao" requires=true>
         </label>
 
-        <label> Data a ser feita:
-            <input type="date" name="quando" required=true>
+        <label> 
+            <p> Data a ser feita: </p>
+            <input class ="textinput" type="date" name="quando" required=true>
         </label>
 
-        <label> Estado:
+        <label> 
+            <p> Estado: </p>
             <input type="radio" name="tipo" required=true value="Para fazer">        
             Para fazer
             <input type="radio" name="tipo" required=true value="Fazendo">        
@@ -27,7 +33,7 @@
             <input type="radio" name="tipo" required=true value="Concluído">        
             Concluído
         </label>
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar" class="botao-ir">
         <a href="/Usuario/Login"> Sair </a>
     </form>
 </section>
