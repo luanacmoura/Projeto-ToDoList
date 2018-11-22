@@ -1,0 +1,51 @@
+@using Projeto_ToDoList.Models;
+
+@{
+    ViewBag.Title="Editar usuário";
+    Layout = "MasterPage";
+}
+
+@{
+    UsuarioModel usuario = ViewBag.Usuario;
+}
+
+<section class="quadrado-login">
+    <img  src="/css/imagens/icon.png" class="logo"/>
+    <h1> Task Central </h1>
+    <p class="slogan"> Editando usuario! </p>
+
+
+    <form action="/Usuario/Editar" method="POST">
+        
+        <input type="hidden" value="@usuario.Id" name="id">
+        
+        <label> 
+            <p> Nome: </p>
+            <input class="textinput" type="text" name="nome" required=true value="@usuario.Nome">
+        </label>
+
+        <label> 
+            <p> Email: </p>
+            <input class="textinput" type="email" name="email" required=true value="@usuario.Email">
+        </label>
+
+        <label> 
+            <p> Senha: </p>
+            <input class="textinput" type="password" name="senha" required=true value="@usuario.Senha">
+        </label>
+
+        <label> 
+            <p> Tipo: </p>
+            <select class="textinput" name="tipo" required=true>
+                <option name="usuario"> Usuario comum </option>
+                <option name="admin"> Administrador</option>
+            </select>
+        </label>
+
+        <input type="submit" value="Continuar" class="botao-ir">
+        <a href="/Usuario/Login"> Sair </a>
+
+
+    </form>
+</section>
+@ViewBag.Mensagem
